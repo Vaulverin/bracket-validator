@@ -2,6 +2,11 @@
     "name": "vaulverin/bracket-validator",
     "description": "Validates strings like \"(()()()()))((((()()()))(()()()(((()))))))\" to ensure counts of opening and closing brackets are equal.",
     "type": "library",
+    "autoload": {
+         "psr-4": {
+              "Vaulverin\\BracketValidator": "src"
+         }
+    },
     "require": {
     },
     "require-dev": {
