@@ -1,0 +1,17 @@
+{
+    "name": "vaulverin/bracket-validator",
+    "description": "Validates strings like \"(()()()()))((((()()()))(()()()(((()))))))\" to ensure counts of opening and closing brackets are equal.",
+    "type": "library",
+    "require": {
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vaulin Aleksandr",
+            "email": "vauulin@gmail.com"
+        }
+    ]
+}
