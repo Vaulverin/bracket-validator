@@ -5,7 +5,7 @@ class BracketValidator
 {
     const OPENING_BRACKET = '(';
     const CLOSING_BRACKET = ')';
-    const INSIGNIFICANT_SYMBOLS = [' ', '\n', '\t', '\r'];
+    const INSIGNIFICANT_SYMBOLS = [" ", "\n", "\t", "\r"];
 
     /**
      * It takes string like "(()()()()))((((()()()))(()()()(((()))))))".
