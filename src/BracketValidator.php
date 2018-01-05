@@ -8,9 +8,9 @@ class BracketValidator
     const INSIGNIFICANT_SYMBOLS = [' ', '\n', '\t', '\r'];
 
     /**
-     * Принимает на вход строку вида "(()()()()))((((()()()))(()()()(((()))))))".
-     * И возвращать true, если строка корректна – все открытые скобки корректно открыты
-     * и закрыты, или же false в противном случае.
+     * It takes string like "(()()()()))((((()()()))(()()()(((()))))))".
+     * And returns true, if string is valid – all opening brackets are closed,
+     * false otherwise.
      * @param string $strToParse
      * @return bool
      */
@@ -25,7 +25,7 @@ class BracketValidator
                 } else if ($char === static::CLOSING_BRACKET) {
                     $bracketCounter--;
                 } else {
-                    $errorMessage = 'Символ "'. $char .'" не входит в список допустимых.';
+                    $errorMessage = 'Symbol "'. $char .'" is not acceptable.';
                     throw new \InvalidArgumentException($errorMessage);
                 }
             }
