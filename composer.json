@@ -2,12 +2,14 @@
     "name": "vaulverin/bracket-validator",
     "description": "Validates strings like \"(()()()()))((((()()()))(()()()(((()))))))\" to ensure counts of opening and closing brackets are equal.",
     "type": "library",
+    "homepage": "https://github.com/Vaulverin/bracket-validator",
     "autoload": {
          "psr-4": {
-              "Vaulverin\\BracketValidator": "src"
+              "\\Vaulverin\\BracketValidator\\": "src"
          }
     },
     "require": {
+         "php": "^7.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.5"
